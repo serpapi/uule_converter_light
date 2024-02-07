@@ -1,16 +1,8 @@
 # lib/uule_converter.rb
 require 'base64'
-require 'geocoder'
 
 class UuleConverter
   E7_FACTOR = 10_000_000
-
-  def self.get_gl(latitude, longitude)
-    results = Geocoder.search([latitude, longitude])
-
-    # If a result is found, return the country code (gl parameter)
-    results.first&.country_code&.downcase
-  end
 
   def self.encode(latitude, longitude, radius: -1, role: 1, producer: 12, provenance: 0, timestamp: nil)
     timestamp ||= (Time.now.to_f * 1_000_000).to_i
