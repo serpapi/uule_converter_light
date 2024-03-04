@@ -1,28 +1,41 @@
-# UULE Converter Light
+# SerpApi UULE Converter Light
 #### A Ruby library for encoding and decoding UULE parameters in Google search URLs using coordinates
 
-[![Gem Version](https://img.shields.io/gem/v/uule_converter_light.svg)](https://rubygems.org/gems/uule_converter_light)
-[![Contributors](https://img.shields.io/github/contributors/serpapi/uule_converter_light.svg)](https://github.com/serpapi/uule_converter_light/graphs/contributors)
-[![Forks](https://img.shields.io/github/forks/serpapi/uule_converter_light.svg)](https://github.com/serpapi/uule_converter_light/network/members)
-[![Stargazers](https://img.shields.io/github/stars/serpapi/uule_converter_light.svg)](https://github.com/serpapi/uule_converter_light/stargazers)
-[![Issues](https://img.shields.io/github/issues/serpapi/uule_converter_light.svg)](https://github.com/serpapi/uule_converter_light/issues)
-[![Issues](https://img.shields.io/github/issues-closed/serpapi/uule_converter_light.svg)](https://github.com/serpapi/uule_converter_light/issues?q=is%3Aissue+is%3Aclosed)
-[![MIT License](https://img.shields.io/github/license/serpapi/uule_converter_light.svg)](https://github.com/serpapi/uule_converter_light/blob/master/LICENSE)
+---
 
-![uule_converter_light](https://user-images.githubusercontent.com/73674035/231456927-53508370-3462-4aef-81df-644569c66af3.jpg)
+[![Gem Version][gem-shield]][gem-url]
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![Issues][issuesclosed-shield]][issuesclosed-url]
+[![MIT License][license-shield]][license-url]
 
-A Blog Post with example usecase (with original version): [Real World Example of GPS Targeted Local SERP](https://serpapi.com/blog/gps-targeted-local-serp)
+![serpapi-uule-converter](https://github.com/serpapi/uule_converter/assets/73674035/9d22887e-5fa6-4e9c-868f-6a05b5474acb)
 
-The only difference between the original and the light version is the `geocoder` dependency.
+---
 
+A Blog Post with example usecase: [Real World Example of GPS Targeted Local SERP](https://serpapi.com/blog/gps-targeted-local-serp)
+
+This gem is served under two names: 
+- `uule_converter_light`(legacy): [RubyGems Link](https://rubygems.org/gems/serpapi-uule-converter-light)
+- `serpapi-uule-converter-light`(recent): [RubyGems Link](https://rubygems.org/gems/uule_converter_light)
+
+You can also find a light version at [SerpApi UULE Converter Light](github.com/serpapi/uule_converter_light).
+
+---
+
+### Installation
 ```bash
-gem install uule_converter_light
+gem install serpapi-uule-converter-light
 ```
+
+---
 
 ### Example
 
 ```rb
-require 'uule_converter_light'
+require 'serpapi-uule-converter-light'
 
 latitude = 30.266666
 longitude = -97.733330
@@ -34,8 +47,9 @@ puts "Encoded UULE: #{uule_encoded}"
 # Decode UULE to coordinates
 uule_decoded = UuleConverter.decode(uule_encoded)
 puts "Decoded UULE: #{uule_decoded}"
-
 ```
+
+---
 
 ### Output
 
@@ -45,22 +59,23 @@ Encoded UULE: a+cm9sZToxCnByb2R1Y2VyOjEyCnByb3ZlbmFuY2U6MAp0aW1lc3RhbXA6MTY4MDg3
 Decoded UULE: {:role=>"1", :producer=>"12", :provenance=>"0", :timestamp=>"1680877906236736", :"latlng{"=>nil, :"}"=>nil, :radius=>"-1", :latitude=>30.266666, :longitude=>-97.73333}
 ```
 
+---
+
 ### Result
 
-![uule_converter_light](https://user-images.githubusercontent.com/73674035/230626568-f6a5e57f-7053-4325-802a-eedd23ff7a49.png)
+![serpapi-uule-converter-light](https://user-images.githubusercontent.com/73674035/230626568-f6a5e57f-7053-4325-802a-eedd23ff7a49.png)
 
-[gem-shield]: https://img.shields.io/gem/v/uule_converter_light.svg
-[gem-url]: https://rubygems.org/gems/uule_converter_light
-[contributors-shield]: https://img.shields.io/github/contributors/serpapi/uule_converter_light.svg
-[contributors-url]: https://github.com/serpapi/uule_converter_light/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/serpapi/uule_converter_light.svg
-[forks-url]: https://github.com/serpapi/uule_converter_light/network/members
-[stars-shield]: https://img.shields.io/github/stars/serpapi/uule_converter_light.svg
-[stars-url]: https://github.com/serpapi/uule_converter_light/stargazers
-[issues-shield]: https://img.shields.io/github/issues/serpapi/uule_converter_light.svg
-[issues-url]: https://github.com/serpapi/uule_converter_light/issues
-[issuesclosed-shield]: https://img.shields.io/github/issues-closed/serpapi/uule_converter_light.svg
-[issuesclosed-url]: https://github.com/serpapi/uule_converter_light/issues?q=is%3Aissue+is%3Aclosed
-[license-shield]: https://img.shields.io/github/license/serpapi/uule_converter_light.svg
-[license-url]: https://github.com/serpapi/uule_converter_light/blob/master/LICENSE
-
+[gem-shield]: https://img.shields.io/gem/v/serpapi-uule-converter-light.svg
+[gem-url]: https://rubygems.org/gems/serpapi-uule-converter-light
+[contributors-shield]: https://img.shields.io/github/contributors/serpapi/uule_converter.svg
+[contributors-url]: https://github.com/serpapi/uule_converter/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/serpapi/uule_converter.svg
+[forks-url]: https://github.com/serpapi/uule_converter/network/members
+[stars-shield]: https://img.shields.io/github/stars/serpapi/uule_converter.svg
+[stars-url]: https://github.com/serpapi/uule_converter/stargazers
+[issues-shield]: https://img.shields.io/github/issues/serpapi/uule_converter.svg
+[issues-url]: https://github.com/serpapi/uule_converter/issues
+[issuesclosed-shield]: https://img.shields.io/github/issues-closed/serpapi/uule_converter.svg
+[issuesclosed-url]: https://github.com/serpapi/uule_converter/issues?q=is%3Aissue+is%3Aclosed
+[license-shield]: https://img.shields.io/github/license/serpapi/uule_converter.svg
+[license-url]: https://github.com/serpapi/uule_converter/blob/master/LICENSE
