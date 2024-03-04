@@ -1,6 +1,6 @@
-# uule_converter.gemspec
+# serpapi-uule-converter-light.gemspec
 Gem::Specification.new do |spec|
-  spec.name          = 'uule_converter_light'
+  spec.name          = 'serpapi-uule-converter-light'
   spec.version       = '0.1.1'
   spec.authors       = ['Emirhan Akdeniz']
   spec.email         = ['kagermanovtalks@gmail.com']
