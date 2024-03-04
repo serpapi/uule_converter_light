@@ -1,4 +1,4 @@
-# lib/uule_converter.rb
+# lib/serpapi-uule-converter-light.rb
 require 'base64'
 
 class UuleConverter
