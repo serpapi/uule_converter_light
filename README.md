@@ -21,7 +21,7 @@ This gem is served under two names:
 - `uule_converter_light`(legacy): [RubyGems Link](https://rubygems.org/gems/serpapi-uule-converter-light)
 - `serpapi-uule-converter-light`(recent): [RubyGems Link](https://rubygems.org/gems/uule_converter_light)
 
-You can also find a light version at [SerpApi UULE Converter Light](github.com/serpapi/uule_converter_light).
+You can also find the original version at [SerpApi UULE Converter Light](github.com/serpapi/uule_converter).
 
 ---
 
